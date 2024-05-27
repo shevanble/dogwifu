@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preload" href="images/1.png" as="image" type="image/webp">
+  <link rel="preload" href="images/2.png" as="image" type="image/webp">
+  <link rel="preload" href="images/3.png" as="image" type="image/webp">
+  <link rel="preload" href="images/4.png" as="image" type="image/webp">
+  <link rel="preload" href="images/5.png" as="image" type="image/webp">
+  <link rel="preload" href="images/6.png" as="image" type="image/webp">
+  <link rel="preload" href="images/danger.png" as="image" type="image/webp">
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.html">
+
+  <meta name="title" content="DOG WIF UMBRELLA TO THE EVEREST $WDOG" />
+  <meta name="description" content="Dog Wif Umbrella ($WDOG) is a revolutionary meme coin that unites a community of enthusiasts on an extraordinary quest, symbolized by a charming canine with an umbrella striving to conquer Mount Everest, embodying the spirit of fun, ambition, and resilience." />
+  <meta name="og:site_name" content="DogWifUmbrella"></meta>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="index.html" />
+  <meta property="og:title" content="DOG WIF UMBRELLA TO THE EVEREST $WDOG" />
+  <meta property="og:description" content="Dog Wif Umbrella ($WDOG) is a revolutionary meme coin that unites a community of enthusiasts on an extraordinary quest, symbolized by a charming canine with an umbrella striving to conquer Mount Everest, embodying the spirit of fun, ambition, and resilience." />
+  <meta property="og:image" content="banner.jpeg" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="index.html" />
+  <meta property="twitter:title" content="$WDOG" />
+  <meta property="twitter:description" content="Dog Wif Umbrella ($WDOG) is a revolutionary meme coin that unites a community of enthusiasts on an extraordinary quest, symbolized by a charming canine with an umbrella striving to conquer Mount Everest, embodying the spirit of fun, ambition, and resilience." />
+  <meta property="twitter:image" content="banner.jpeg" />
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/animation.webflow.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="page-wrapper w-clearfix">
+    <div class="global-styles w-embed">
+      <style>
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+#main-text {
+  font-size: 30px;
+}
+
+#header-title {
+  margin-top: -50px;
+}
+
+html { font-size: 1rem; }
+  @media screen and (max-width:1600px) { html { font-size: calc(0.34318555008210183rem + 0.6568144499178982vw); } }
+  @media screen and (max-width:991px) { 
+    html { 
+      font-size: 0.75rem; 
+    }
+
+    .mobile-text {
+      font-size: 1.25rem;
+    }
+
+    #sub-title {
+      font-size: 1.25rem;
+    }
+
+    #main-text {
+      font-size: 1.25rem;
+    }
+
+    #header-title {
+      margin-top: -20px;
+    }
+  } 
+    
+  @media screen and (max-width:767px) { 
+    html { 
+      font-size: 0.75rem; 
+    }
+
+    .mobile-text {
+      font-size: 1.25rem;
+    }
+
+    #sub-title {
+      font-size: 1.25rem;
+    }
+
+    #main-text {
+      font-size: 1.25rem;
+    }
+
+    #header-title {
+      margin-top: -20px;
+    }
+    
+  }
+
+  .rfm-marquee-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: var(--width);
+  transform: var(--transform);
+}
+.rfm-marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.rfm-marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
+}
+
+.rfm-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.rfm-overlay::before, .rfm-overlay::after {
+  background: linear-gradient(to right, var(--gradient-color), transparent);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+  pointer-events: none;
+  touch-action: none;
+}
+.rfm-overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.rfm-overlay::before {
+  left: 0;
+  top: 0;
+}
+
+.rfm-marquee {
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.rfm-initial-child-container {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rfm-child {
+  transform: var(--transform);
+} 
+
+body {
+  font-family: myFirstFont;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/GloriaHallelujah.ttf);
+}
+
+hr {
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
+
+</style>
+    </div>
+    <div style="border-bottom: 5px solid black; height: 55px; background-color: green;">
+      <b>
+        <div style="margin: 0 auto; padding-top: 18px; --pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;" class="rfm-marquee-container bg-skin text-black border-t-4 border-b-4 border-black flex overflow-hidden py-1 md:text-3xl text-xl"><div class="rfm-marquee" style="--play: running; --direction: normal; --duration: 35.61966796875s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div class="rfm-initial-child-container"><div style="--transform: none;" class="rfm-child">$WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG</div></div></div><div class="rfm-marquee" style="--play: running; --direction: normal; --duration: 35.61966796875s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div style="--transform: none;" class="rfm-child">$WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG $WDOG </div></div></div>
+      </b>
+    </div>
+    <div class="main-wrapper">
+      <section data-w-id="7dc0dddf-c218-e1f8-c5a9-27e28b88b56b" class="section-page-intro">
+        <div class="wrapper">
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+          <div><span class="dot"></span></div>
+        </div>
+        <div class="page-intro-wrapper">
+          <div class="page-intro-content">
+            <div class="page-padding">
+              <div class="page-intro-text-wrapper">
+                <div id="header-title" class="page-intro-title-small is-best-in-class">The Next Big Thing You Don't Wanna Miss.</div>
+                <br>
+                <hr style="color: black; border: 1px solid black">
+                <div class="page-intro-title-wrapper">
+                  <div class="page-intro-title is-webdesign"><span style="color: red;">Dog </span> Wif <br> </div>
+                  <div style="margin-top: 30px;" class="page-intro-title is-animation">Umbrella</div>
+                  <div style="margin-top: 30px; color: aliceblue;" class="page-intro-title is-animation">$WDOG</div>
+                </div>
+                <div class="page-intro-title-small is-made-in-webflow" style="margin: 0 auto;">
+                  <div class="buygroup">
+                    <a href="" target="_blank" class="button is-bright is-secondary is-large buy w-button">BUY NOW</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <img src="images/doggy.png" loading="lazy" sizes="(max-width: 612px) 100vw, 612px" srcset="images/iiii-p-500.png 500w, images/doggy.png 612w" alt="" class="image-3 x">
+          
+          <div class="page-intro-splitscreen-wrapper">
+            <div class="page-intro-splitscreen-top"></div>
+            <div class="page-intro-splitscreen-bottom"></div>
+          </div>
+        </div>
+        <div class="section-after-intro-text">
+          <div class="page-padding">
+            <div class="container-small">
+              <div class="text-align-center">
+                <div class="spacer-sm-start spacer-sm-end">
+                  <div class="heading-style-h1 mobile-text" id="sub-title" style="line-height: 1.5;word-spacing: 20%;">I am the <span style="color: red;">greediest</span> motherfucker alive.</div> <br>
+                  <img src="images/danger.png" loading="lazy" sizes="100vw"  alt="" class="image-placeholder" style="margin-bottom: 50px;">
+
+              
+                  <div class="heading-style-h2 mobile-text" style=" line-height: 1.2">From <span style="color: red;">pro gaming</span> to <span style="color: red;">competitive eating</span>. When it comes to winning, I'll do whatever it takes. Trust me, you don't want to bet against me. That's checkmate, my friend.</div>
+                </div>
+                <a href="https://x.com/dogwifumbrellas" target="_blank" class="button is-bright is-secondary is-large w-button">TWITTER</a>
+                <a href="https://t.me/DogWifUmbrellaSolana" target="_blank" class="button is-bright is-secondary is-large w-button">TELEGRAM</a>
+              </div>
+              <div id="main-text" class="mobile-text">
+                <br><br>
+                <p>
+                  Dog Wif Umbrella isn’t merely a cryptocurrency; it’s a revolution. Every token symbolizes a step in our loyal pup's ascent to greatness, uniting a community of enthusiasts who share a passion for fun, ambition, and the thrill of the climb. As you hold and trade $WDOG, you’re not just investing in a coin; you’re investing in a vision.
+                  <br><br>
+                  Prepare for an adventure like no other with Dog Wif Umbrella - because when it rains, it pours opportunities, and when we climb, we reach for the stars!                </p>
+                <div class="spacer-sm-start"></div>
+
+                <div class="heading-style-h3" style="color: white;">CA: IAMTHEGREEDIESTMOTHERFUCKERALIVE</div>
+
+                <div class="spacer-sm-start"></div>
+                <div class="chartbtngroup">
+                  <a href="#" class="button is-bright is-secondary is-large w-button">DEXSCREENER</a>
+                  <a href="#" class="button is-bright is-secondary is-large w-button">JUPITER</a>
+                </div>
+                <div class="buygroup">
+                  <a href="#" target="_blank" class="button is-bright is-secondary is-large buy w-button">BUY NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tutorial" class="section-intro">
+        <div class="page-paddinsg">
+          <div style="text-align: center;padding-top: 7.5rem;">
+          <h1 class="intro-title" style="padding-top: 30px;padding-bottom: 50px;">All eyez on me:</h1></div>
+          <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+            <div class="w-layout-grid memegrid" style="max-width: 88rem">
+            <img src="images/1.png" alt="1" loading="lazy" class="meme lazy-load">
+            <img src="images/2.png" alt="2" loading="lazy"  class="meme">
+            <img src="images/3.png" alt="3" loading="lazy" class="meme">
+            <img src="images/4.png" alt="4" loading="lazy" class="meme">
+            <img src="images/5.png" alt="5" loading="lazy" class="meme">
+            <img src="images/6.png" alt="6" loading="lazy" class="meme">
+          </div>
+        </div>
+          <div class="intro-content">
+            <div class="intro-pre-title x">
+            </div>            <div class="div-block">
+              <div class="heading-style-h1">TOKENOMICS</div>
+              <div class="w-layout-grid toekgrid">
+                <div id="w-node-_01f1de3c-855f-a8e2-5c49-3db311c67a6b-47047a67" class="tokenwrap">
+                  <div id="w-node-_9b8e48bb-3913-8f82-d055-6a34563c9890-47047a67" class="heading-style-h6 x">Total Circulating Supply</div>
+                  <div id="w-node-_0618609b-580e-4930-d496-eef9c137049a-47047a67" class="heading-style-h6 x y">975,000,000</div>
+                </div>
+                <div class="tokenwrap">
+                  <div id="w-node-_0a610d42-13fb-3913-aaad-674fbaf02af8-47047a67" class="heading-style-h6 x">LP BURNED</div>
+                  <div id="w-node-_62b0f7a8-ae71-63e5-047e-1078a905b7a3-47047a67" class="heading-style-h6 x y">100%</div>
+                </div>
+                <div id="w-node-_6a388488-8400-85e4-457f-5b1ac173a72a-47047a67" class="tokenwrap">
+                  <div id="w-node-_2cb4a8b7-5edf-8ae8-6b24-c44a92f5ff70-47047a67" class="heading-style-h6 x">BUY / SELL TAX</div>
+                  <div id="w-node-_5c17a7e8-340b-4b9c-362b-cc1e83a20ab0-47047a67" class="heading-style-h6 x y">0%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <div class="bottom-footer">
+      <div class="content-wrapper-footer">
+        <div class="footer-flex-wrap">
+          <div class="footer-block-left">
+            <div class="footer-brand">Dog Wif Umbrella</div><br>
+            <div class="line-break"></div>
+            <p class="paragraph">$WDOG is a meme coin without intrinsic value or any promise of financial gain. There is no official team or development roadmap. This coin is purely for entertainment and holds no practical use.</p>
+          </div>
+          <div class="footer-block-right">
+            <div class="w-layout-grid grid-2">
+              <div id="w-node-_1fdae1f4-28a4-4305-e862-42898a7748a8-47047a67" class="footer-column">
+                <div class="footer-title-2">SOCIAL&#x27;S</div>
+                <a href="https://t.me/DogWifUmbrellaSolana" target="_blank" class="footer-link-dark">TELEGRAM</a>
+                <a href="https://x.com/dogwifumbrellas" target="_blank" class="footer-link-dark">TWITTER / X</a>
+              </div>
+              <div id="w-node-_1fdae1f4-28a4-4305-e862-42898a7748b1-47047a67" class="footer-column">
+                <div class="footer-title-2">BUY NOW</div>
+
+                <a href="#" target="_blank" class="footer-link-dark">JUPITER</a>
+
+              </div>
+              <div id="w-node-_9cf6f951-49f8-d86f-9963-2695a1e4b60c-47047a67" class="footer-column">
+                <div class="footer-title-2">CONTACT</div>
+                <a href="mailto:info@catwifumbrella.xyz" class="footer-link-dark">EMAIL</a>
+                <a href="https://t.me/CatWifRod" target="_blank" class="footer-link-dark">TELEGRAM</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-full">
+          <div class="footer-wrapper-2">
+            <div class="text-rights-2"><span style="color: red;"><b>SOLANA BLOCKCHAIN<br>CA: IAMTHEGREEDIESTMOTHERFUCKERALIVE</b></span></div>
+          </div>
+          <div class="footer-wrapper-2 x" style="color: red;">
+            Copyright © 2024 $WDOG
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
